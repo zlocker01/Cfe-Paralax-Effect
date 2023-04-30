@@ -1,0 +1,352 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1rem;
+}
+
+.contenedor{
+	width: 90%;
+	max-width: auto;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* header */
+
+header {
+	width: 100%;
+	background: url('../img/bg.jpg') #281a0c;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center 0;
+}
+
+header .contenedor {
+	position: relative;
+	height: 43.75rem;
+}
+
+header .menu {
+	width: 100%;
+	text-align: right;
+}
+
+header .menu a {
+	color: #fff;
+	font-size: 1.25rem;
+	font-weight: 300;
+	display: inline-block;
+	text-decoration: none;
+	margin: 2.5rem .625rem;
+	position: relative;
+}
+
+header .menu a:hover {
+	text-decoration: underline;
+}
+
+header .textos {
+	width: 100%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	margin-top: -3.25rem;
+}
+
+header .textos .nombre {
+	font-size: 3.125rem;
+	font-weight: 600;
+}
+
+header .textos .nombre span {
+	font-weight: 300;
+}
+
+header .textos h3 {
+	font-weight: 300;
+	font-style: italic;
+	font-size: 1.5625rem;
+}
+
+
+/* main */
+
+main {
+	background: url('../img/bg-textura.png');
+	background-repeat: repeat;
+}
+
+main .acerca-de .contenedor {
+	overflow: visible;
+	position: relative;
+}
+
+main .acerca-de .foto {
+	width: 80%;
+	position: absolute;
+	left: 0;
+	top: -3.125rem;
+	z-index: 0;
+	box-shadow: 0rem 0rem .9375rem rgba(0, 0, 0, .35);
+}
+
+main .acerca-de .foto img {
+	vertical-align: top;
+	width: 100%;
+}
+
+main .acerca-de article {
+	background-color: #fff;
+	padding: 2.5rem;
+	width: 50%;
+	position: relative;
+	z-index: 1;
+	top: 31.25rem;
+	float: right;
+	box-shadow: 0rem 0rem .9375rem rgba(0, 0, 0, .35);
+}
+
+main .acerca-de article h3 {
+	font-size: 3.125rem;
+	margin-bottom: 2.5rem;
+	font-weight: 300;
+}
+
+main .acerca-de article p {
+	line-height: 1.75rem;
+	margin-bottom: .9375rem;
+}
+
+/* sections */
+
+main .menu {
+	padding-top: 35.625rem;
+	margin-bottom: 3.125rem;
+}
+
+main .menu .contenedor-menu, 
+main .menu .contenedor-menu-2 {
+	border: .0625rem solid #000;
+	background: transparent;
+	padding: .625rem;
+	overflow: hidden;
+}
+
+main .menu .titulo {
+	font-size: 2.5rem;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 1.25rem;
+}
+
+main .menu article {
+	width: 50%;
+	float: left;
+	padding: 1.25rem;
+}
+
+main .menu .categoria {
+	font-size: 1.375rem;
+	font-weight: 700;
+	margin-bottom: 2.5rem;
+	text-align: center;
+}
+
+main .menu .platillo {
+	margin-bottom:  1.875rem;
+	padding-bottom: 1.875rem;
+	border-bottom: 3px dotted #000;
+	overflow: hidden;
+}
+
+main .menu .nombre {
+	font-size: 1.25rem;
+	margin-bottom: .9375rem;
+	float: left;
+}
+
+main .menu .precio {
+	font-size: 1.25rem;
+	float: right;
+	margin-bottom: .9375rem;
+}
+
+main .menu .descripcion {
+	font-size: 1rem;
+	color: #676767;
+	clear: both;
+}
+
+main .galeria {
+	overflow: hidden;
+}
+
+main .galeria .foto {
+	width: 25%;
+	float: left;
+}
+
+main .galeria .foto img {
+	width: 100%;
+	vertical-align: top;
+	opacity: .7;
+}
+
+main .galeria .foto img:hover {
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+}
+
+main .ubicacion {
+	background: #fff;
+	padding: 3.75rem 0;
+	overflow: hidden;
+}
+
+main .ubicacion .titulo {
+	font-size: 2.5rem;
+	line-height: 2.5rem;
+	font-weight: 300;
+	margin-bottom: .9375rem;
+}
+
+main .ubicacion .direccion {
+	float: left;
+	width: 50%;
+	text-align: left;
+}
+
+main .ubicacion .horarios{
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+
+main .ubicacion .direccion .calle{
+	margin-bottom: .9375rem;
+}
+
+main .ubicacion .horarios h4 {
+	text-align: center;
+	margin-bottom: .9375rem;
+}
+
+main .ubicacion .horarios.entre-seman,
+main .ubicacion .horarios .fin-semana {
+	float: left;
+	text-align: center;
+	width: 50%;
+	overflow: hidden;
+}
+
+main .mapa {
+	width: 100%;
+	overflow: hidden;
+}
+
+main .mapa iframe {
+	width: 100%;
+}
+
+/* footer */
+
+footer {
+	background: #000;
+}
+
+footer .copyright {
+	color: #fff;
+	padding: .9375rem 0;
+	text-align: center;
+}
+
+/* media queries */
+
+@media screen and (max-width: 800px) {
+	header .contenedor {
+		position: static;
+		height: auto;
+	}
+
+	header .textos {
+		position: static;
+		margin: 6.25rem 0;
+	}
+
+	header .menu {
+		text-align: center;
+	}
+
+	header .menu a {
+		margin: .625rem 1.25rem;
+	}
+
+	header .textos .nombre {
+		font-size: 1.875rem;
+	}
+
+	header .textos h3 {
+		font-size: 1.125rem;
+	}
+
+	main .acerca-de .foto {
+		position: relative;
+		width: 100%;
+	}
+
+	main .acerca-de article {
+		width: 100%;
+		position: relative;
+		top: -2.5rem;
+		transform: translate(0px, 0);
+		-webkit-transform: translate(0px, 0);
+		-moz-transform: translate(0px, 0);
+		-ms-transform: translate(0px, 0);
+		-o-transform: translate(0px, 0);
+}
+
+main .menu {
+	padding-top: 18.75rem;
+}
+
+main .menu article {
+	width: 100%;
+}
+
+main .galeria .foto {
+	width: 50%;
+}
+
+main .mapa {
+	width: 80%;
+	margin: auto;
+}
+}
+
+@media screen and (max-width: 400px) {
+	main .acerca-de article h3 {
+		font-size:  2.125rem;
+		margin-bottom:  .625rem;
+	}
+
+	main .menu .article .nombre
+	main .menu .article .precio {
+		line-height: 1rem;
+		font-size: 1rem;
+	}
+
+    main .ubicacion .direccion  {
+		margin-bottom: .9375rem;
+	}
+
+	main .ubicacion .direccion 
+	main .ubicacion .horarios {
+		width: 100%;
+		text-align: center;
+	}
+}
